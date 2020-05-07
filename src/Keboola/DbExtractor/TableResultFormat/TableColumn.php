@@ -49,7 +49,7 @@ class TableColumn
     private $foreignKey;
 
     /** @var array $requiredParams */
-    private $requiredParams = ['name', 'type'];
+    private $requiredParams = ['name'];
 
     public function setName(string $name): self
     {
