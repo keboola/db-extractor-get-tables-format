@@ -116,7 +116,7 @@ class Table
                 continue;
             }
             $propertyValue = $this->{$property} ?? null;
-            if (in_array($property, $this->requiredParams) && is_null($propertyValue)) {
+            if (in_array($property, $this->requiredParams) && empty($propertyValue)) {
                 throw new UserException(sprintf(
                     'Parameter \'%s\' is required',
                     $property
